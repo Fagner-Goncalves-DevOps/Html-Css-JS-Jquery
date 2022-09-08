@@ -1,7 +1,20 @@
 body {
 }
 
+div {
+    width: 200px;
+    height: 100px;
+    border: 1px solid #000;
+    margin: 20px;
+}
+
+
 p {
     color: #00ff21;
     background: red;
-} 
+}
+
+a {
+    cursor: pointer;
+    color: #00f;
+}

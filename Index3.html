@@ -9,36 +9,33 @@
 </head>
 
 <body>
-    <h4>Funcionalidades basica</h4>
-    <p id="cor">Fagner Gonçalves</p>
-    <button type="button" id="btn-vermelha">Background Preto</button>
-    <hr>
+
+    <div>DIV 1</div>
+    <div>DIV 2</div>
+    <div>DIV 3</div>
+    <p class="msg"></p>
+    <button type="button">Colorir DIVS</button>
+
 </body>
 </html>
 
 
 <script type="text/javascript">
-    //construtor jquery
-    $('');
- 
 
     $(document).ready(function () {
-        $("#btn-vermelha").click(function () {
-            $("#cor").css({ 'background': 'black' });
-        });         
+        $('button').click(function () {
+            $('div').each(function (i) {
+                var result = i + 1;
+                alert('DIV ' + result + ' vai ser colorida');
+                $(this).css('background', 'green');
+            });
+        });
     });
 
-    //modelo Completo
-    $(document).ready(function () {
-    });
-
-   //modelo Abreviado
-    $(function () {
-    });
 
 </script>
 
 
 
-   
+
 
