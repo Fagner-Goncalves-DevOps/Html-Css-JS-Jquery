@@ -6,11 +6,12 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jquery", "Jquery", "{929F5238-780E-434A-95FF-AB5FB0F79B0A}"
 	ProjectSection(SolutionItems) = preProject
 		Index.html = Index.html
+		Index2.html = Index2.html
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{C0318F8D-A084-4317-99A3-15CA534F2AA9}"
 	ProjectSection(SolutionItems) = preProject
-		css-arquivos.css = css-arquivos.css
+		css\css-arquivos.css = css\css-arquivos.css
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{182EDEFD-C171-454B-A7D8-D94BED9B5900}"

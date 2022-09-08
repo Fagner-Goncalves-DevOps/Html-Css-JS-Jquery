@@ -9,36 +9,37 @@
 </head>
 
 <body>
-    <h4>Funcionalidades basica</h4>
-    <p id="cor">Fagner Gonçalves</p>
-    <button type="button" id="btn-vermelha">Background Preto</button>
     <hr>
+    <div>div sem atributos</div>
+
+    <div id="diferente">div#diferente</div>
+    <div>div sem atributos</div>
+
+    <div id="container">
+        <a>Parágrafo dentro da div#container</a>
+    </div>
+
+    <a>Parágrafo fora da div#container</a>
+
+
 </body>
 </html>
 
 
 <script type="text/javascript">
-    //construtor jquery
-    $('');
- 
 
     $(document).ready(function () {
-        $("#btn-vermelha").click(function () {
-            $("#cor").css({ 'background': 'black' });
-        });         
+        $("#diferente").css('background', 'red');
+            $('a', $('#container')).css('color', 'green');
+                   //carga html ejetada direto jquery
+                $('<p>Parágrafo criado com jQuery.</p>').prependTo('body');
+
     });
 
-    //modelo Completo
-    $(document).ready(function () {
-    });
-
-   //modelo Abreviado
-    $(function () {
-    });
 
 </script>
 
 
 
-   
+
 
