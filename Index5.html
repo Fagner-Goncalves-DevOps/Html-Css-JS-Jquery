@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="css/css-arquivos.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <p><p />
+    <hr />
+    <button type="button">Bordas campos disabled</button>
+    <hr />
+
+    <form action="">
+        <p>input de texto: <input type="text" disabled="disabled" /></p>
+        <p><label>input checkbox: <input type="checkbox" /></label></p>
+        <p><label>input checkbox: <input type="checkbox" /></label></p>
+        <p><label>input checkbox: <input type="checkbox" checked="checked" /></label></p>
+        <p><label>input checkbox: <input type="checkbox" /></label></p>
+        <p><label>input radio: <input type="radio" /></label></p>
+        <p><label>input radio: <input type="radio" checked="checked" /></label></p>
+    </form>
+    <hr />
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('button').click(function () {
+            $(':disabled').parent().css({ 'border': '2px solid #ff0000' });
+        });
+    });
+
+
+</script>
+
+
+
+
+
