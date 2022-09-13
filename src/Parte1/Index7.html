@@ -51,18 +51,12 @@
     function disabledInicial() {
         $(':disabled').css({ 'color': '#ff0000' }).append(' - Morto');
     }
+
     $(function () {
         $('button').click(function () {
-            var tt = $(':disabled').attr('disabled', false).css({ 'color': '' });
-            console.log(tt.text());
+            var res = $(':disabled').attr('disabled', false).css({ 'color': '' });
             });
     });
-
-    function fazerTrim(string) {
-        return string.substr(0, string.length - 8);
-    }
-
-
 
 </script>
 
