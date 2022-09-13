@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="css/css-arquivos.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <p><p />
+    <hr />
+    <button type="button">Bordas campos disabled</button>
+    <hr />
+    <form action="">
+        <p><label>input de texto: <input type="text" /></label></p>
+        <p><label>input de senha: <input type="password" /></label></p>
+        <p><label>input checkbox: <input type="checkbox" /></label></p>
+        <p><label>input radio: <input type="radio" /></label></p>
+        <p><label>input reset: <input type="reset" /></label></p>
+        <p><label>input botao: <input type="button" /></label></p>
+    </form>
+    <hr />
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('button').click(function () {
+            $(':checkbox').parent().css('border', '2px solid #ff0000');
+            $(':checkbox').attr('disabled', true);
+        });
+
+
+    });
+
+</script>
+
+
+
+
+
